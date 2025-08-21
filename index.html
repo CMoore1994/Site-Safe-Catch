@@ -1,31 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Safe Catch</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>Site Safe Catch</h1>
-    <form id="incidentForm">
-     <label for="siteName">Site Name</label>
-<select id="siteName" name="siteName" required>
-  <option value="">-- Select a Site --</option>
-</select>
+<form id="incidentForm">
+  <h1>Site Safe Catch</h1>
 
+  <label for="siteName">Site Name</label>
+  <select id="siteName" name="site" required>
+    <option value="">-- Select a Site --</option>
+    <!-- options are injected by script.js -->
+  </select>
 
-      <label for="description">Description</label>
-      <textarea id="description" name="description" required></textarea>
+  <label for="description">Description</label>
+  <textarea id="description" name="description" required></textarea>
 
-      <label for="photo">Photo</label>
-      <input type="file" id="photo" name="photo" accept="image/*" required />
+  <label for="photo">Photo</label>
+  <input type="file" id="photo" name="photo" accept="image/*" capture="environment" />
 
-      <button type="submit">Submit</button>
-    </form>
-    <p id="status"></p>
-  </div>
-  <script src="script.js"></script>
+  <button type="submit">Submit</button>
+</form>
+<script src="script.js"></script>
 </body>
 </html>
