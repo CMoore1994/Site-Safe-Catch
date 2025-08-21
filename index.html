@@ -10,8 +10,11 @@
   <div class="container">
     <h1>Site Safe Catch</h1>
     <form id="incidentForm">
-      <label for="siteName">Site Name</label>
-      <input type="text" id="siteName" name="siteName" required />
+     <label for="siteName">Site Name</label>
+<select id="siteName" name="siteName" required>
+  <option value="">-- Select a Site --</option>
+</select>
+
 
       <label for="description">Description</label>
       <textarea id="description" name="description" required></textarea>
